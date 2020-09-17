@@ -9,14 +9,14 @@ public class Temperatura {
         Random random = new Random();
 
         Lista<Double> temperaturas = new Lista<Double>();
-        temperaturas.toString();
+        System.out.println(temperaturas.toString());
 
         temperaturas.inserirInicio(random.doubles(-100, 100 ).findFirst().getAsDouble());
         temperaturas.inserirInicio(random.doubles(-100, 100 ).findFirst().getAsDouble());
         temperaturas.inserirInicio(random.doubles(-100, 100 ).findFirst().getAsDouble());
         temperaturas.inserirInicio(random.doubles(-100, 100 ).findFirst().getAsDouble());
         temperaturas.inserirInicio(random.doubles(-100, 100 ).findFirst().getAsDouble());
-        temperaturas.toString();
+        System.out.println(temperaturas.toString());
         temperaturas.inserirFinal(random.doubles(-100, 100 ).findFirst().getAsDouble());
         temperaturas.inserirFinal(random.doubles(-100, 100 ).findFirst().getAsDouble());
         temperaturas.inserirFinal(random.doubles(-100, 100 ).findFirst().getAsDouble());
@@ -54,6 +54,6 @@ public class Temperatura {
         temperaturas.removerQualquer(random.nextInt(6)+1);
         temperaturas.removerQualquer(random.nextInt(6)+1);
 
-        temperaturas.toString();
+        System.out.println(temperaturas.toString());
     }
 }
