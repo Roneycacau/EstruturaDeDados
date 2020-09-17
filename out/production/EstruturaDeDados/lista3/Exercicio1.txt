@@ -1,0 +1,20 @@
+1)  Uma  fila  é  um  tipo  especial  de  lista  com  política  que  restringe  a  manipulação  dos elementos. A política da fila é First In First Out (FIFO), o primeiro elemento adicionado será removido primeiro. Implemente uma classe denominada Filha com esta política.
+Exemplo:
+
+Fila Vazia
+
+Adiciona um elemento (20)
+
+Qual é o índice do início da fila? 0
+Qual é o elemento do início da fila? 20
+Qual é o índice do final da fila? 0
+Qual é o elemento do finalda fila? 20
+
+Adiciona um elemento (10)
+
+
+Qual é o índice do início da fila? 0
+
+Qual é o elemento do início da fila? 20
+Qual é o índice do final da fila? 1
+Qual é o elemento do final da fila? 10

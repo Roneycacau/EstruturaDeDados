@@ -10,7 +10,7 @@ public class No<T> {
     }
 
     public No<T> getProximo(){
-        return this.proximo;
+        return proximo;
     }
 
     public void setProximo(No<T> proximo){
@@ -22,7 +22,7 @@ public class No<T> {
     }
 
     public T getItem(){
-        return this.item;
+        return item;
     }
 
     @Override

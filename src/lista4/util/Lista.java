@@ -13,41 +13,50 @@ public class Lista<T> {
         return tamanho == 0;
     }
 
-    public void inserirInicio(T item) {
-        No<T> novo = new No<>(item);
+    public No<T> inserirInicio(T item) {
+        No<T> novo = new No<T>(item);
         novo.setProximo(inicio);
         inicio = novo;
         tamanho++;
+        return novo;
     }
 
-    public void inserirFinal(T item) {
-        No<T> novo = new No<>(item);
-        No<T> aux = inicio;
+    public No<T> inserirFinal(T item) {
+        No<T> novo = new No<T>(item);
         if (listaVazia()) {
-            while (aux.getProximo() != null) {
-                aux = aux.getProximo();
-            }
-            aux.setProximo(novo);
+            inicio = novo;
+            tamanho++;
+            return novo;
         }
+        No<T> aux = inicio;
+        while (aux.getProximo() != null) {
+            aux = aux.getProximo();
+        }
+        aux.setProximo(novo);
+        tamanho++;
+        return novo;
     }
 
-    public void inserirQualquer(T item, int posicao) {
-        if (posicao == 1) {
-            inserirInicio(item);
-        } else if (posicao == tamanho + 1) {
-            inserirFinal(item);
-        } else if (posicao > tamanho + 1 || posicao < 1) {
+
+    public No<T> inserirQualquer(T item, int posicao) {
+        if (posicao > tamanho + 1 || posicao < 1) {
             throw new IllegalArgumentException("Posição Inválida");
-        } else {
-            No<T> novo = new No<>(item);
-            No<T> ponteiro = inicio;
-            for (int i = 1; i < posicao; i++) {
-                ponteiro = ponteiro.getProximo();
-            }
-            novo.setProximo(ponteiro.getProximo());
-            ponteiro.setProximo(novo);
         }
+        if (posicao == 1) {
+            return inserirInicio(item);
+        }
+        if (posicao == tamanho + 1) {
+            return inserirFinal(item);
+        }
+        No<T> novo = new No<T>(item);
+        No<T> aux = inicio;
+        for (int i = 1; i < posicao -1 ; i++) {
+            aux = aux.getProximo();
+        }
+        novo.setProximo(aux.getProximo());
+        aux.setProximo(novo);
         tamanho++;
+        return novo;
     }
 
     public void removerInicio() {
@@ -64,41 +73,44 @@ public class Lista<T> {
         }
         No<T> aux = inicio;
         for (int i = 1; i < tamanho - 1; i++) {
-            aux.getProximo();
+            aux = aux.getProximo();
         }
         aux.setProximo(null);
         tamanho--;
     }
 
     public void removerQualquer(int posicao) {
+        if (posicao > tamanho || posicao < 1) {
+            throw new IllegalArgumentException("Posição Inválida");
+        }
         if (listaVazia()) {
             throw new IllegalArgumentException("Lista Vazia");
-        } else if (posicao == 1) {
+        }
+        if (posicao == 1) {
             removerInicio();
         } else if (posicao == tamanho) {
             removerFinal();
-        } else if (posicao > tamanho || posicao < 1) {
-            throw new IllegalArgumentException("Posição Inválida");
-        } else {
+        }  else {
             No<T> aux = inicio;
             for (int i = 1; i < posicao - 1; i++) {
                 aux = aux.getProximo();
             }
             aux.setProximo(aux.getProximo().getProximo());
+            tamanho--;
         }
     }
 
     @Override
     public String toString() {
-        if(listaVazia()) return "Lista Vazia";
+        if (listaVazia()) return "Lista Vazia";
 
-        StringBuilder exibir = new StringBuilder("Lista: \n");
+        String exibir ="Lista: \n";
         No<T> aux = inicio;
-        while (aux.getProximo() != null){
-            exibir.append(aux.toString());
-            exibir.append("\n");
+        while (aux.getProximo() != null) {
+            exibir += aux.toString() + "\n";
         }
-        exibir.append(aux.toString());
-        return exibir.toString();
+        exibir += aux.toString();
+
+        return exibir;
     }
 }
