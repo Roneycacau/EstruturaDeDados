@@ -108,6 +108,7 @@ public class Lista<T> {
         No<T> aux = inicio;
         while (aux.getProximo() != null) {
             exibir += aux.toString() + "\n";
+            aux = aux.getProximo();
         }
         exibir += aux.toString();
 

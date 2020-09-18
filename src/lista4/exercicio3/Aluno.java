@@ -1,7 +1,8 @@
 package lista4.exercicio3;
 
 public class Aluno {
-    private static int ra = 0;
+    private static int count = 0;
+    private  int ra;
     private String nome;
     private String turma;
     private String semestre;
@@ -10,7 +11,7 @@ public class Aluno {
     }
 
     public Aluno(String nome, String turma, String semestre) {
-        this.ra = ra++;
+        this.ra = count++;
         this.nome = nome;
         this.turma = turma;
         this.semestre = semestre;
