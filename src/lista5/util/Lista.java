@@ -102,23 +102,27 @@ public class Lista<T> {
         }
     }
 
+    public void ordenaString(No<T> lista) {
+        No<T> aux = new No<T>(lista.getProximo().getItem());
+        if(lista.getItem().toString().compareToIgnoreCase(lista.getProximo().getItem().toString()) > 0) {
+            lista.setProximo(lista);
+            lista.setItem(aux.getItem());
+        }
+    }
+
     @Override
     public String toString() {
         if (listaVazia()) return "Lista Vazia";
 
         String exibir ="Lista: \n";
         No<T> aux = inicio;
-        montaLista(exibir, aux);
-//        while (aux.getProximo() != null) {
-//            exibir += aux.toString() + "\n";
-//            aux = aux.getProximo();
-//        }
+        while (aux.getProximo() != null) {
+            exibir += aux.toString() + "\n";
+            aux = aux.getProximo();
+        }
         exibir += aux.toString();
 
         return exibir;
     }
-    private String montaLista(String lista, No<T> aux){
-        lista += aux == null ? aux.getProximo() + "\n" : ateProximoNull(aux.getProximo());
-        return lista;
-    }
+
 }
