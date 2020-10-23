@@ -1,4 +1,5 @@
 ##### Defina cada uma das estruturas de dados abaixo, descreva quais são as operações aplicáveis e apresente pelo menos 10 simulações para cada uma das estruturas de dados, não sendo para um dos métodos implementados e sim para cada estrutura
+##### [simulações](https://github.com/Roneycacau/EstruturaDeDados/blob/master/src/atividade3/exercicio1/simulacoes.md) 
 
  - Lista Estática
     - **Definição:** Lista de tamanho fixo ordenada sequencialmente acessível através de index.
