@@ -81,6 +81,10 @@ public class ListaDinamicaSimples<T> {
             throw new IllegalArgumentException("Lista Vazia");
         }
         NoSimples<T> aux = inicio;
+        if (tamanho == 1){
+
+            return removerInicio();
+        }
         for (int i = 1; i < tamanho - 1; i++) {
             aux = aux.getProximo();
         }

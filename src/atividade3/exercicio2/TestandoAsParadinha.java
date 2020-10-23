@@ -211,16 +211,16 @@ public class TestandoAsParadinha {
         System.out.println();
 
 //region LlistaDinamicaSimplesAddEspecifica
-        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()+1));
-        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()+1));
-        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()+1));
-        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()+1));
-        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()+1));
-        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()+1));
-        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()+1));
-        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()+1));
-        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()+1));
-        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()+1));
+        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()));
+        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()));
+        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()));
+        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()));
+        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()));
+        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()));
+        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()));
+        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()));
+        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()));
+        listaDinamicaSimplesAddQualquer(listaDinamicaSimples, numeruzin(1, listaDinamicaSimples.getTamanho()));
 //endregion
 
         System.out.println();
@@ -275,26 +275,156 @@ public class TestandoAsParadinha {
         System.out.println("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv");
         System.out.println("===========Lista Dinâmica Dupla===========");
 
-//region ListaDinamicaDuplaAdd
 
+//region LlistaDinamicaDuplaAddInicio
+        listaDinamicaDuplaAddInicio(listaDinamicaDupla);
+        listaDinamicaDuplaAddInicio(listaDinamicaDupla);
+        listaDinamicaDuplaAddInicio(listaDinamicaDupla);
+        listaDinamicaDuplaAddInicio(listaDinamicaDupla);
+        listaDinamicaDuplaAddInicio(listaDinamicaDupla);
+        listaDinamicaDuplaAddInicio(listaDinamicaDupla);
+        listaDinamicaDuplaAddInicio(listaDinamicaDupla);
+        listaDinamicaDuplaAddInicio(listaDinamicaDupla);
+        listaDinamicaDuplaAddInicio(listaDinamicaDupla);
+        listaDinamicaDuplaAddInicio(listaDinamicaDupla);
 //endregion
+
         System.out.println();
-//region ListaDinamicaDuplaRemove
 
+//region LlistaDinamicaDuplaAddFim
+        listaDinamicaDuplaAddFim(listaDinamicaDupla);
+        listaDinamicaDuplaAddFim(listaDinamicaDupla);
+        listaDinamicaDuplaAddFim(listaDinamicaDupla);
+        listaDinamicaDuplaAddFim(listaDinamicaDupla);
+        listaDinamicaDuplaAddFim(listaDinamicaDupla);
+        listaDinamicaDuplaAddFim(listaDinamicaDupla);
+        listaDinamicaDuplaAddFim(listaDinamicaDupla);
+        listaDinamicaDuplaAddFim(listaDinamicaDupla);
+        listaDinamicaDuplaAddFim(listaDinamicaDupla);
+        listaDinamicaDuplaAddFim(listaDinamicaDupla);
+//endregion        
+
+        System.out.println();
+
+//region LlistaDinamicaDuplaAddEspecifica
+        listaDinamicaDuplaAddQualquer(listaDinamicaDupla, numeruzin(1, listaDinamicaDupla.getTamanho()));
+        listaDinamicaDuplaAddQualquer(listaDinamicaDupla, numeruzin(1, listaDinamicaDupla.getTamanho()));
+        listaDinamicaDuplaAddQualquer(listaDinamicaDupla, numeruzin(1, listaDinamicaDupla.getTamanho()));
+        listaDinamicaDuplaAddQualquer(listaDinamicaDupla, numeruzin(1, listaDinamicaDupla.getTamanho()));
+        listaDinamicaDuplaAddQualquer(listaDinamicaDupla, numeruzin(1, listaDinamicaDupla.getTamanho()));
+        listaDinamicaDuplaAddQualquer(listaDinamicaDupla, numeruzin(1, listaDinamicaDupla.getTamanho()));
+        listaDinamicaDuplaAddQualquer(listaDinamicaDupla, numeruzin(1, listaDinamicaDupla.getTamanho()));
+        listaDinamicaDuplaAddQualquer(listaDinamicaDupla, numeruzin(1, listaDinamicaDupla.getTamanho()));
+        listaDinamicaDuplaAddQualquer(listaDinamicaDupla, numeruzin(1, listaDinamicaDupla.getTamanho()));
+        listaDinamicaDuplaAddQualquer(listaDinamicaDupla, numeruzin(1, listaDinamicaDupla.getTamanho()));
 //endregion
 
+        System.out.println();
+
+//region LlistaDinamicaDuplaRemoveEspecifica
+        listaDinamicaDuplaRemoveQualquer(listaDinamicaDupla, numeruzin(1,listaDinamicaDupla.getTamanho()));
+        listaDinamicaDuplaRemoveQualquer(listaDinamicaDupla, numeruzin(1,listaDinamicaDupla.getTamanho()));
+        listaDinamicaDuplaRemoveQualquer(listaDinamicaDupla, numeruzin(1,listaDinamicaDupla.getTamanho()));
+        listaDinamicaDuplaRemoveQualquer(listaDinamicaDupla, numeruzin(1,listaDinamicaDupla.getTamanho()));
+        listaDinamicaDuplaRemoveQualquer(listaDinamicaDupla, numeruzin(1,listaDinamicaDupla.getTamanho()));
+        listaDinamicaDuplaRemoveQualquer(listaDinamicaDupla, numeruzin(1,listaDinamicaDupla.getTamanho()));
+        listaDinamicaDuplaRemoveQualquer(listaDinamicaDupla, numeruzin(1,listaDinamicaDupla.getTamanho()));
+        listaDinamicaDuplaRemoveQualquer(listaDinamicaDupla, numeruzin(1,listaDinamicaDupla.getTamanho()));
+        listaDinamicaDuplaRemoveQualquer(listaDinamicaDupla, numeruzin(1,listaDinamicaDupla.getTamanho()));
+        listaDinamicaDuplaRemoveQualquer(listaDinamicaDupla, numeruzin(1,listaDinamicaDupla.getTamanho()));
+//endregion
+
+        System.out.println();
+
+//region LlistaDinamicaDuplaRemoveInicio
+        listaDinamicaDuplaRemoveInicio(listaDinamicaDupla);
+        listaDinamicaDuplaRemoveInicio(listaDinamicaDupla);
+        listaDinamicaDuplaRemoveInicio(listaDinamicaDupla);
+        listaDinamicaDuplaRemoveInicio(listaDinamicaDupla);
+        listaDinamicaDuplaRemoveInicio(listaDinamicaDupla);
+        listaDinamicaDuplaRemoveInicio(listaDinamicaDupla);
+        listaDinamicaDuplaRemoveInicio(listaDinamicaDupla);
+        listaDinamicaDuplaRemoveInicio(listaDinamicaDupla);
+        listaDinamicaDuplaRemoveInicio(listaDinamicaDupla);
+        listaDinamicaDuplaRemoveInicio(listaDinamicaDupla);
+//endregion
+
+        System.out.println();
+
+//region LlistaDinamicaDuplaRemoveFim
+        listaDinamicaDuplaRemoveFim(listaDinamicaDupla);
+        listaDinamicaDuplaRemoveFim(listaDinamicaDupla);
+        listaDinamicaDuplaRemoveFim(listaDinamicaDupla);
+        listaDinamicaDuplaRemoveFim(listaDinamicaDupla);
+        listaDinamicaDuplaRemoveFim(listaDinamicaDupla);
+        listaDinamicaDuplaRemoveFim(listaDinamicaDupla);
+        listaDinamicaDuplaRemoveFim(listaDinamicaDupla);
+        listaDinamicaDuplaRemoveFim(listaDinamicaDupla);
+        listaDinamicaDuplaRemoveFim(listaDinamicaDupla);
+        listaDinamicaDuplaRemoveFim(listaDinamicaDupla);
+//endregion
+        
         System.out.println("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv");
         System.out.println("======Lista Dinâmica Dupla Recursiva======");
 
-//region ListaDinamicaDuplaRecursivaAdd
 
+//region ListaDinamicaDuplaRecursivaAddInicio
+        listaDinamicaDuplaRecursivaAddInicio(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaAddInicio(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaAddInicio(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaAddInicio(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaAddInicio(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaAddInicio(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaAddInicio(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaAddInicio(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaAddInicio(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaAddInicio(listaDinamicaDuplaRecursiva);
 //endregion
+
         System.out.println();
-//region ListaDinamicaDuplaRecursivaRemove
 
+//region ListaDinamicaDuplaRecursivaAddFim
+        listaDinamicaDuplaRecursivaAddFim(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaAddFim(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaAddFim(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaAddFim(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaAddFim(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaAddFim(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaAddFim(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaAddFim(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaAddFim(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaAddFim(listaDinamicaDuplaRecursiva);
+//endregion        
+
+        System.out.println();
+
+//region ListaDinamicaDuplaRecursivaRemoveInicio
+        listaDinamicaDuplaRecursivaRemoveInicio(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaRemoveInicio(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaRemoveInicio(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaRemoveInicio(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaRemoveInicio(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaRemoveInicio(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaRemoveInicio(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaRemoveInicio(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaRemoveInicio(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaRemoveInicio(listaDinamicaDuplaRecursiva);
 //endregion
 
+        System.out.println();
 
+//region ListaDinamicaDuplaRecursivaRemoveFim
+        listaDinamicaDuplaRecursivaRemoveFim(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaRemoveFim(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaRemoveFim(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaRemoveFim(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaRemoveFim(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaRemoveFim(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaRemoveFim(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaRemoveFim(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaRemoveFim(listaDinamicaDuplaRecursiva);
+        listaDinamicaDuplaRecursivaRemoveFim(listaDinamicaDuplaRecursiva);
+//endregion
     }
 
     private static void filaAdd(Fila<Curso> fila) {
@@ -446,12 +576,107 @@ public class TestandoAsParadinha {
     private static void listaDinamicaSimplesRemoveQualquer(ListaDinamicaSimples<Curso> listaDinamicaSimples, int pos) {
         System.out.println("__________________");
         System.out.println(listaDinamicaSimples.toString());
-        System.out.print("listaDinamicaSimples.removeEspecifica() - removerá o item: ");
+        System.out.print("listaDinamicaSimples.removeEspecifica(" + pos + ") - removerá o item: ");
         System.out.println(listaDinamicaSimples.removerQualquer(pos));
         System.out.println(listaDinamicaSimples.toString());
         System.out.println("__________________");
     }
 
+    private static void listaDinamicaDuplaAddInicio(ListaDinamicaDupla<Curso> listaDinamicaDupla) {
+        System.out.println("__________________");
+        Curso aux;
+        aux = curso();
+        System.out.println("listaDinamicaDupla.adicionaInicio(" + aux.toString() + ")");
+        listaDinamicaDupla.inserirInicio(aux);
+        System.out.println(listaDinamicaDupla.toString());
+        System.out.println("__________________");
+    }
+
+    private static void listaDinamicaDuplaAddFim(ListaDinamicaDupla<Curso> listaDinamicaDupla) {
+        System.out.println("__________________");
+        Curso aux;
+        aux = curso();
+        System.out.println("listaDinamicaDupla.adicionarFim(" + aux.toString() + ")");
+        listaDinamicaDupla.inserirFinal(aux);
+        System.out.println(listaDinamicaDupla.toString());
+        System.out.println("__________________");
+    }
+
+    private static void listaDinamicaDuplaAddQualquer(ListaDinamicaDupla<Curso> listaDinamicaDupla, int pos) {
+        System.out.println("__________________");
+        Curso aux;
+        aux = curso();
+        System.out.println("listaDinamicaDupla.adicionaEspecifica(" + pos + ", " + aux.toString() + ")");
+        listaDinamicaDupla.inserirQualquer(aux, pos);
+        System.out.println(listaDinamicaDupla.toString());
+        System.out.println("__________________");
+    }
+
+    private static void listaDinamicaDuplaRemoveInicio(ListaDinamicaDupla<Curso> listaDinamicaDupla) {
+        System.out.println("__________________");
+        System.out.println(listaDinamicaDupla.toString());
+        System.out.print("listaDinamicaDupla.removeInicio() - removerá o item: ");
+        System.out.println(listaDinamicaDupla.removerInicio());
+        System.out.println(listaDinamicaDupla.toString());
+        System.out.println("__________________");
+    }
+
+    private static void listaDinamicaDuplaRemoveFim(ListaDinamicaDupla<Curso> listaDinamicaDupla) {
+        System.out.println("__________________");
+        System.out.println(listaDinamicaDupla.toString());
+        System.out.print("listaDinamicaDupla.removeFim() - removerá o item: ");
+        System.out.println(listaDinamicaDupla.removerFinal());
+        System.out.println(listaDinamicaDupla.toString());
+        System.out.println("__________________");
+    }
+
+    private static void listaDinamicaDuplaRemoveQualquer(ListaDinamicaDupla<Curso> listaDinamicaDupla, int pos) {
+        System.out.println("__________________");
+        System.out.println(listaDinamicaDupla.toString());
+        System.out.print("listaDinamicaDupla.removeEspecifica(" + pos + ") - removerá o item: ");
+        System.out.println(listaDinamicaDupla.removerQualquer(pos));
+        System.out.println(listaDinamicaDupla.toString());
+        System.out.println("__________________");
+    }
+
+ 
+    private static void listaDinamicaDuplaRecursivaAddInicio(ListaDinamicaDuplaRecursiva<Curso> listaDinamicaDuplaRecursiva) {
+        System.out.println("__________________");
+        Curso aux;
+        aux = curso();
+        System.out.println("listaDinamicaDuplaRecursiva.adicionaInicio(" + aux.toString() + ")");
+        listaDinamicaDuplaRecursiva.inserirInicio(aux);
+        System.out.println(listaDinamicaDuplaRecursiva.mostrarLista(new NoDuplo<Curso>(aux), "", true));
+        System.out.println("__________________");
+    }
+
+    private static void listaDinamicaDuplaRecursivaAddFim(ListaDinamicaDuplaRecursiva<Curso> listaDinamicaDuplaRecursiva) {
+        System.out.println("__________________");
+        Curso aux;
+        aux = curso();
+        System.out.println("listaDinamicaDuplaRecursiva.adicionarFim(" + aux.toString() + ")");
+        listaDinamicaDuplaRecursiva.inserirFinal(aux);
+        System.out.println(listaDinamicaDuplaRecursiva.mostrarLista(new NoDuplo<Curso>(aux), "", true));
+        System.out.println("__________________");
+    }
+
+    private static void listaDinamicaDuplaRecursivaRemoveInicio(ListaDinamicaDuplaRecursiva<Curso> listaDinamicaDuplaRecursiva) {
+        System.out.println("__________________");
+        System.out.println(listaDinamicaDuplaRecursiva.mostrarLista(new NoDuplo<Curso>(new Curso()), "", true));
+        System.out.print("listaDinamicaDuplaRecursiva.removeInicio() - removerá o item: ");
+        System.out.println(listaDinamicaDuplaRecursiva.removerInicio());
+        System.out.println(listaDinamicaDuplaRecursiva.mostrarLista(new NoDuplo<Curso>(new Curso()), "", true));
+        System.out.println("__________________");
+    }
+
+    private static void listaDinamicaDuplaRecursivaRemoveFim(ListaDinamicaDuplaRecursiva<Curso> listaDinamicaDuplaRecursiva) {
+        System.out.println("__________________");
+        System.out.println(listaDinamicaDuplaRecursiva.mostrarLista(new NoDuplo<Curso>(new Curso()), "", true));
+        System.out.print("listaDinamicaDuplaRecursiva.removeFim() - removerá o item: ");
+        System.out.println(listaDinamicaDuplaRecursiva.removerFinal());
+        System.out.println(listaDinamicaDuplaRecursiva.mostrarLista(new NoDuplo<Curso>(new Curso()), "", true));
+        System.out.println("__________________");
+    }
 
     private static Curso curso() {
         String area = numeruzin() == 1 ? "Humanas" :

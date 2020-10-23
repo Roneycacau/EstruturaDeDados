@@ -52,7 +52,7 @@ public class Pilha<T> {
     public String toString() {
         if (listaVazia()) return "\nvvv Base vvv\nPilha Vazia\n^^^ Topo ^^^";
 
-        String exibir = "\nvvv Base vvv";
+        String exibir = "\nvvv Base vvv\n";
         NoSimples<T> aux = inicio;
         while (aux.getProximo() != null) {
             exibir += aux.toString() + "\n";

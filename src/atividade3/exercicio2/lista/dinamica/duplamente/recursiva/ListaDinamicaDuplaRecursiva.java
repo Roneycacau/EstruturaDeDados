@@ -6,7 +6,11 @@ public class ListaDinamicaDuplaRecursiva<T> {
 
     private NoDuplo<T> inicio;
     private int tamanho;
-    private T[] array;
+    private NoDuplo<T> fim;
+
+    public int getTamanho() {
+        return tamanho;
+    }
 
     public ListaDinamicaDuplaRecursiva() {
         this.inicio = null;
@@ -17,64 +21,74 @@ public class ListaDinamicaDuplaRecursiva<T> {
         return tamanho == 0;
     }
 
-    public NoDuplo<T> inserirInicio(T item) {
-        NoDuplo<T> novo = new NoDuplo<>(item);
-        novo.setProximo(inicio);
-        novo.setAnterior(null);
-        inicio.setAnterior(novo);
-        inicio = novo;
-        tamanho++;
-        return novo;
-    }
-
-    public NoDuplo<T> inserirFinal(T item) {
-        NoDuplo<T> novo = new NoDuplo<>(item);
-
-        if (listaVazia()) {
-            inicio = novo;
-            tamanho++;
-            return novo;
-        }
-        NoDuplo<T> aux = BuscaUltimo(inicio);
-        novo.setAnterior(aux);
-        aux.setProximo(novo);
-        return novo;
-    }
-
-    public NoDuplo<T> BuscaUltimo(NoDuplo<T> aux) {
+    public NoDuplo<T> buscarUltimo(NoDuplo<T> aux) {
         if (aux.getProximo() != null) {
-            return BuscaUltimo(aux.getProximo());
+            return buscarUltimo(aux.getProximo());
         }
         return aux;
     }
 
-    public void removeInicio() {
+    public NoDuplo<T> inserirInicio(T item) {
+        NoDuplo<T> novo = new NoDuplo<>(item);
+        novo.setProximo(inicio);
+        if (inicio != null)
+            inicio.setAnterior(novo);
+        inicio = novo;
+        tamanho++;
+        return inicio;
+    }
+
+    public NoDuplo<T> inserirFinal(T item) {
+        NoDuplo<T> novo = new NoDuplo<>(item);
+        fim = novo;
+        if (listaVazia()) {
+            fim = novo;
+            return inserirInicio(item);
+        }
+        NoDuplo<T> aux = buscarUltimo(inicio);
+        fim.setAnterior(aux);
+        aux.setProximo(fim);
+        tamanho++;
+        return fim;
+    }
+
+    public NoDuplo<T> removerInicio() {
         if (listaVazia()) {
             throw new IllegalArgumentException("Lista Vazia");
         }
+        NoDuplo<T> aux = inicio;
+        if (inicio.getProximo() != null)
+            inicio.getProximo().setAnterior(null);
         inicio = inicio.getProximo();
-        inicio.setAnterior(null);
         tamanho--;
+        return aux;
     }
 
-    public void removeFinal() {
+    public NoDuplo<T> removerFinal() {
+
         if (listaVazia()) {
             throw new IllegalArgumentException("Lista Vazia");
         }
-        NoDuplo<T> aux = BuscaUltimo(inicio);
-        aux.setProximo(null);
+        if (tamanho == 1) {
+            return removerInicio();
+        }
+
+        NoDuplo<T> aux = buscarUltimo(inicio);
+        fim = aux;
+        aux.getAnterior().setProximo(null);
         tamanho--;
+        return fim;
     }
 
-    public String mostraLista(NoDuplo<T> aux, String resultadoPesquisa, boolean primeiraExecucao) {
+    public String mostrarLista(NoDuplo<T> aux, String resultadoPesquisa, boolean primeiraExecucao) {
         if (primeiraExecucao) {
             aux = inicio;
             primeiraExecucao = false;
         }
 
         if (aux != null) {
-            resultadoPesquisa = resultadoPesquisa + "\n T: " + aux.toString();
-            return mostraLista(aux.getProximo(), resultadoPesquisa, primeiraExecucao);
+            resultadoPesquisa = resultadoPesquisa + "\n" + aux.toString();
+            return mostrarLista(aux.getProximo(), resultadoPesquisa, false);
         }
         return resultadoPesquisa;
     }
