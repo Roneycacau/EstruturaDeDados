@@ -6144,5 +6144,4 @@ __________________
 listaDinamicaDuplaRecursiva.removeFim() - removerá o item: { Curso 121 }  
   
 __________________  
-  
-Process finished with exit code 0  
+
