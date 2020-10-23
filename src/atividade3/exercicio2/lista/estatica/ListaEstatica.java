@@ -7,8 +7,8 @@ public class ListaEstatica<T> {
     String mensagemListaCheia = "Lista Cheia";
     String mensagemListaVazia = "Lista Vazia";
 
-    public ListaEstatica() {
-        vetor = (T[]) new Object[5];
+    public ListaEstatica(int tamanho) {
+        vetor = (T[]) new Object[tamanho];
     }
 
     public boolean listaVazia() {
@@ -91,12 +91,13 @@ public class ListaEstatica<T> {
         return mensagem;
     }
 
+
     public String percorre() {
         StringBuilder mensagem = new StringBuilder("Lista:");
         if (listaVazia()) return "Lista Vazia.";
         for (int i = 0; i < tamanho; i++) {
             if (vetor[i] != null)
-                mensagem.append("\n").append(vetor[i]);
+                mensagem.append("\n" + (i+1) + "#").append(vetor[i]);
         }
         return mensagem.toString();
     }

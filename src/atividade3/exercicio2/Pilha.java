@@ -29,23 +29,30 @@ public class Pilha<T> {
         return novo;
     }
 
-    public void desempilhar() {
+    public NoSimples<T> desempilhar() {
         if (listaVazia()) {
             throw new IllegalArgumentException("Pilha Vazia");
         }
         NoSimples<T> aux = inicio;
-        for (int i = 1; i < tamanho - 1; i++) {
+        if (tamanho == 1) {
+            tamanho--;
+            inicio = null;
+            return inicio;
+        }
+        for (int i = 1; i < tamanho - 2; i++) {
             aux = aux.getProximo();
         }
+        NoSimples<T> aux2 = aux.getProximo();
         aux.setProximo(null);
         tamanho--;
+        return aux2;
     }
 
     @Override
     public String toString() {
-        if (listaVazia()) return "Pilha Vazia";
+        if (listaVazia()) return "\nvvv Base vvv\nPilha Vazia\n^^^ Topo ^^^";
 
-        String exibir ="Por motivos de facilitar a implementação essa pilha está de ponta cabeça :) \nvvv Base vvv\n";
+        String exibir = "\nvvv Base vvv";
         NoSimples<T> aux = inicio;
         while (aux.getProximo() != null) {
             exibir += aux.toString() + "\n";

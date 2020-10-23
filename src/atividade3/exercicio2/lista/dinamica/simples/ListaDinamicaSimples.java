@@ -6,6 +6,11 @@ public class ListaDinamicaSimples<T> {
     private NoSimples<T> inicio;
     private int tamanho;
 
+    public int getTamanho() {
+        return tamanho;
+    }
+
+
     public ListaDinamicaSimples() {
         this.inicio = null;
         this.tamanho = 0;
@@ -61,15 +66,17 @@ public class ListaDinamicaSimples<T> {
         return novo;
     }
 
-    public void removerInicio() {
+    public NoSimples<T> removerInicio() {
         if (listaVazia()) {
             throw new IllegalArgumentException("Lista Vazia");
         }
+        NoSimples<T> aux = inicio;
         inicio = inicio.getProximo();
         tamanho--;
+        return aux;
     }
 
-    public void removerFinal() {
+    public NoSimples<T> removerFinal() {
         if (listaVazia()) {
             throw new IllegalArgumentException("Lista Vazia");
         }
@@ -77,11 +84,14 @@ public class ListaDinamicaSimples<T> {
         for (int i = 1; i < tamanho - 1; i++) {
             aux = aux.getProximo();
         }
+        NoSimples<T> aux2 = aux.getProximo();
         aux.setProximo(null);
         tamanho--;
+        return aux2;
     }
 
-    public void removerQualquer(int posicao) {
+    public NoSimples<T> removerQualquer(int posicao) {
+        NoSimples<T> aux, aux2 = inicio;
         if (posicao > tamanho || posicao < 1) {
             throw new IllegalArgumentException("Posição Inválida");
         }
@@ -93,13 +103,15 @@ public class ListaDinamicaSimples<T> {
         } else if (posicao == tamanho) {
             removerFinal();
         }  else {
-            NoSimples<T> aux = inicio;
+            aux = inicio;
             for (int i = 1; i < posicao - 1; i++) {
                 aux = aux.getProximo();
             }
+            aux2 = aux.getProximo();
             aux.setProximo(aux.getProximo().getProximo());
             tamanho--;
         }
+        return aux2;
     }
 
     @Override

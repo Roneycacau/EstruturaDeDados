@@ -29,17 +29,19 @@ public class Fila<T> {
         return novo;
     }
 
-    public void desenfileirar() {
+    public NoSimples<T> desenfileirar() {
         if (listaVazia()) {
             throw new IllegalArgumentException("Lista Vazia");
         }
+        NoSimples<T> aux = inicio;
         inicio = inicio.getProximo();
         tamanho--;
+        return aux;
     }
 
     @Override
     public String toString() {
-        if (listaVazia()) return "Fila Vazia\n";
+        if (listaVazia()) return "Fila Vazia";
 
         String exibir = "Fila: \n";
         NoSimples<T> aux = inicio;
@@ -49,6 +51,6 @@ public class Fila<T> {
         }
         exibir += aux.toString();
 
-        return exibir+"\n";
+        return exibir;
     }
 }
