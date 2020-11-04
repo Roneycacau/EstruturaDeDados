@@ -23,6 +23,6 @@ Enquanto i for menor iremos iterar no vetor.
 
 ---
 
-## SIMULAÇÂO
+## SIMULAÇÃO
 
 ![Alt Text](quicksort.GIF)
