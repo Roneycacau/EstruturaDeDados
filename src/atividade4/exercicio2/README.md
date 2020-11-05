@@ -19,4 +19,4 @@ o for no final irá remontar o vetor completo.
 
 ## SIMULAÇÃO
 
-![Alt Text](mergesort.GIF)
+![Alt Text](mergeSort.GIF)
