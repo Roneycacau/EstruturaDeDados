@@ -1,6 +1,13 @@
 package atividade4.exercicio2;
 
+import java.util.Arrays;
+
 public class ExMergeSort {
+    public static void main(String[] args) {
+        int[] vetor = {11, 15, 32, 43, 28, 17, 79, 18, 33, 99, 88, 75, 45, 82, 42, 55, 78};
+        mergeSortRecursivo(vetor, 0, vetor.length-1);
+        System.out.println(Arrays.toString(vetor) );
+    }
     public static void mergeSortRecursivo(int[] lista, int inicio, int fim){
         if (inicio<fim){
             int meio = (inicio+fim)/2;
