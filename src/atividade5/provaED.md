@@ -7,7 +7,7 @@
    ![removeInicio](02-lista-removeInicio.png)
    ![removeIniio](03-lista-removeinicioFim.png)
    ---
-    >removeFim();
+    >removeFim();   
     ![removeFim](04-lista-removeFim.png)
     ![removeFIm](05-lista-removefim.png)
     ![removeFim](06-lista-removefimfim.png)
