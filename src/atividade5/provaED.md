@@ -6,7 +6,7 @@
    >removeInicio();   
    ![removeInicio](02-lista-removeInicio.png)   
    ![removeIniio](03-lista-removeinicioFim.png)   
-   ---
+   
     >removeFim();   
     ![removeFim](04-lista-removeFim.png)   
     ![removeFIm](05-lista-removefim.png)   
@@ -22,7 +22,7 @@
     ![insereQualquer](11-lista-add4.png)   
     ![insereQualquer](12-lista-add4.png)   
     ![insereQualquer](13-lista-add4fim.png)   
-    
+    ---
  - Pilha
    - estrutura de dados que segue a ordem LIFO ultimo a entrar é o primeiro a sair   
    ![pilha](01-pilha.png)   
@@ -35,7 +35,7 @@
    ![pop](05-pilha-pop.png)
    ![pop](06-pilha-pop.png)
    ![pop](07-pilha-pop.png)
-   
+   ---
  - Fila de Prioridades
    - estrutura de dados que segue a ordem FIFO primeiro que entra é o primeiro que sai   
    ![fila](01-fila.png)   
@@ -48,9 +48,24 @@
    ![enqueue](05-fila-enqueue.png)   
    ![enqueue](06-fila-enqueue.png)   
    ![enqueue](07-fila-enqueue.png)   
-   
+   ---
  - Fila Circular
    - igual a fila de prioridade porém o ultimo elemento aponta para o primeiro   
+   ![listaCircular](01-listaCircular.png)
+   
+   >dequeue()
+   ![dequeue](02-listaCircular-dequeue.png)
+   
+   >dequeue()
+   ![dequeue](03-listaCircular-dequeue.png)
+   
+   >enqueue(4)
+   ![enqueue](04-listaCircular-enqueue.png)
+   
+   >enqueue(42)
+   ![enqueue](05-listaCircular-enqueue.png)
+   
+   ---
  - Lista Duplamete Ligada
    - Lista ligada em que além de um elemento apontar para o próximo também aponta para o anterior   
    ![listaDupla](01-listadupla.png)   
@@ -88,8 +103,13 @@
     ![insereQualquer](23-listadupla-insere3-25.png)
     ![insereQualquer](24-listadupla-insere3-25.png)
     
+    ---
  - Árvore Binária
-   - estrutura de dados não linear, bidimensional com propriedades especiais. Utiizada para representar um conjunto de dados de maneira hierárquica   
+   - estrutura de dados não linear, bidimensional com propriedades especiais. Utiizada para representar um conjunto de dados de maneira hierárquica
+   add()
+   
+   remove()
+   ---   
  - Grafos
    - Abstração que permite codificar relacionamentos entre pares de objetos emque os objetos são os vertices do grafo e seus relacionamentos são as arestas
 
