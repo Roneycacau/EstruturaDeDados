@@ -3,7 +3,7 @@
  - Lista 
    - lista em que a ordem é definida por seus elementos, um item da lista aponta para o próximo
    ![lista](01-lista.png)
-   >removeInicio();
+   >removeInicio();   
    ![removeInicio](02-lista-removeInicio.png)
    ![removeIniio](03-lista-removeinicioFim.png)
    ---
@@ -12,12 +12,12 @@
     ![removeFIm](05-lista-removefim.png)
     ![removeFim](06-lista-removefimfim.png)
     
-    >removeQualquer(3)
+    >removeQualquer(3)   
     ![removeQualquer](07-lista-remove3.png)
     ![removeQualquer](08-lista-remove3.png)
     ![removeQualquer](09-lista-remove3fim.png)
     
-    >insereQualquer(4)
+    >insereQualquer(4)   
     ![insereQualquer](10-lista-add4.png)
     ![insereQualquer](11-lista-add4.png)
     ![insereQualquer](12-lista-add4.png)
