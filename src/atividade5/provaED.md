@@ -88,18 +88,20 @@ o for no final irá remontar o vetor completo.
 > 2,6,8,4,16,12
 
 #### 7) Dadas as afirmações, assinale a alternativa que contém, de cima para baixo, a sequência correta, assinalando **V** para verdadeiro e **F** para falso. **Justifique a resposta**
+>resposta C
  ##### A disciplina de acesso da estrutura de dados Pilha determina que o último elemento inserido no conjunto deva ser o primeiro a ser removido. 
   - Verdadeiro, pilha trabalha com um algoritimo lifo onde o ultimo elemento a ser adicionado é o primeiro elemento a ser removido; 
   ##### A implementação de lista utilizando alocação sequencial dos elementos, comparada à alocação encadeada, necessita de mais espaço de armazenamento por elemento do conjunto.
- - A pesquisar
+ - Falso, comparando a mesma quantidade de elementos usando lista com alocação sequencial não vai ocupar mais espaço que em uma alocação encadeada;
  ##### A pesquisa sequencial é mais eficiente que a pesquisa binária para busca de elementos em listas ordenadas implementadas com alocação sequencial dos elementos. 
  - Falso. A pesquisa sequêncial só é mais rápida em casos específicos de o item a ser encontrado estar logo no inicio da lista como não se tem a posição do item buscado devemos comparar o pior caso e no pior caso a busca binária é Θ(log2 n) enquanto a busca sequêncial é O(n).
  ##### As estruturas de dados Pilha e Fila podem ser implementadas utilizando tanto abordagens baseadas na alocação sequencial quanto na alocação encadeada dos elementos. 
- - Falso em partes. Você pode criar um vetor e tratar ele como uma fila ou pilha criando metodos que trabalhem nas limitações (lifo ou fifo) mas ainda fica a brecha para o acesso direto. Então mesmo sendo tecnicamente possivel criar com uma estrutura sequêncial o correto é a utilização encadeada.
+ - Verdadeiro em partes. Você pode criar um vetor e tratar ele como uma fila ou pilha criando metodos que trabalhem nas limitações (lifo ou fifo) mas ainda fica a brecha para o acesso direto. Então mesmo sendo tecnicamente possivel criar com uma estrutura sequêncial o correto é a utilização encadeada.
  ##### A inserção de um elemento no início de uma lista duplamente encadeada implica no deslocamento dos elementos já existentes na memória.
  - Falso. Uma lista encadeada não precisa de deslocamentos, a inclusão é feita apenas mudando os apontamentos dos itens anteriores e posteriores. No caso de uma lista duplamente encadeada, ao incluir no inicio o apontamento do antigo inicio que ia para o fim da lista passa a apontar para o novo elemento e o apontamento do fim da lista também passa a apontar para o novo elemento.
 
 #### 8) Existem várias estruturas que podem ser implementadas no processo de desenvolvimento de software. Listas Simplesmente Encadeadas, Listas Duplamente Encadeadas, Filas e Pilhas podem trabalhar com alocações estáticas e dinâmicas de memória. Sobre as Listas Simplesmente Encadeadas é correto afirmar que:
+>resposta C
 
 - [ ] a) Sempre nas Listas Simplesmente Encadeadas o último elemento irá possuir um ponteiro para o primeiro elemento da lista, facilitando o acesso e remoção de elementos por meio de um percurso simplificado.   
   - Errado, a lista em que o ultimo elemento aponta para o primeiro é a lista circular.
@@ -108,8 +110,8 @@ o for no final irá remontar o vetor completo.
   - Errado, o tamanho deve ser definido no momento da criação nas estruturas de alocação sequêncial. ex Vetores.
 
   
-- [x] c) Quando um novo elemento for inserido na lista é necessário que os ponteiros dos elementos envolvidos sejam atualizados, sem a necessidade de qualquer operação de deslocamento físico dos demais elementos da lista.
-  - Correto, não há deslocamento apenas os apontamentos entre o item anterior e posterior são refeitos
+- [x] **c) Quando um novo elemento for inserido na lista é necessário que os ponteiros dos elementos envolvidos sejam atualizados, sem a necessidade de qualquer operação de deslocamento físico dos demais elementos da lista.**
+  - **Correto, não há deslocamento apenas os apontamentos entre o item anterior e posterior são refeitos**
 
 - [ ] d) Listas encadeadas possuem como principio de funcionamento a atualização dos ponteiros envolvidos, porém cada vez que um novo NO é inserido na lista o endereço de memória de todos os demais elementos precisa ser atualizado para que não haja perda de referências de memória.
   - Errado, os elementos que não tem envolvimento com o novo inserido tem nenhuma ação.
