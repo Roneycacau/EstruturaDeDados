@@ -17,7 +17,7 @@
     ![removeQualquer](08-lista-remove3.png)   
     ![removeQualquer](09-lista-remove3fim.png)   
     
-    >insereQualquer(4)   
+    >insereQualquer(95, 4)   
     ![insereQualquer](10-lista-add4.png)   
     ![insereQualquer](11-lista-add4.png)   
     ![insereQualquer](12-lista-add4.png)   
@@ -26,7 +26,7 @@
  - Pilha
    - estrutura de dados que segue a ordem LIFO ultimo a entrar é o primeiro a sair   
    ![pilha](01-pilha.png)   
-   >push()
+   >push(7)
    ![push](02-pilha-push.png)
    ![push](03-pilha-push.png)
    ![push](04-pilha-push.png)
