@@ -2,10 +2,40 @@
 
  - Lista 
    - lista em que a ordem é definida por seus elementos, um item da lista aponta para o próximo
+   ![lista](01-lista.png)
+   >removeInicio();
+   ![removeInicio](02-lista-removeInicio.png)
+   ![removeIniio](03-lista-removeinicioFim.png)
+   ---
+    >removeFim();
+    ![removeFim](04-lista-removeFim.png)
+    ![removeFIm](05-lista-removefim.png)
+    ![removeFim](06-lista-removefimfim.png)
+    
+    >removeQualquer(3)
+    ![removeQualquer](07-lista-remove3.png)
+    ![removeQualquer](08-lista-remove3.png)
+    ![removeQualquer](09-lista-remove3fim.png)
+    
+    >insereQualquer(4)
+    ![insereQualquer](10-lista-add4.png)
+    ![insereQualquer](11-lista-add4.png)
+    ![insereQualquer](12-lista-add4.png)
+    ![insereQualquer](13-lista-add4fim.png)
+    
  - Pilha
    - estrutura de dados que segue a ordem LIFO ultimo a entrar é o primeiro a sair
+   >push()
+    
+    >pop()
+   
  - Fila de Prioridades
    - estrutura de dados que segue a ordem FIFO primeiro que entra é o primeiro que sai
+   
+   >enqueue()
+    
+    >dequeue()
+   
  - Fila Circular
    - igual a fila de prioridade porém o ultimo elemento aponta para o primeiro
  - Lista Duplamete Ligada
