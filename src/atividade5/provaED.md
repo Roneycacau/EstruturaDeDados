@@ -53,6 +53,41 @@
    - igual a fila de prioridade porém o ultimo elemento aponta para o primeiro   
  - Lista Duplamete Ligada
    - Lista ligada em que além de um elemento apontar para o próximo também aponta para o anterior   
+   ![listaDupla](01-listadupla.png)   
+   
+   >removeInicio()
+    ![removeInicio](02-listadupla-removeInicio.png)
+    ![removeInicio](03-listadupla-removeInicio.png)
+   
+   >removeFim()
+    ![removeFim](04-listadupla-removefim.png)
+    ![removeFim](05-listadupla-removefim.png)
+    ![removeFim](06-listadupla-removefim.png)
+
+    >removeQualquer(6)
+    ![removeQualquer](07-listadupla-remove6.png)
+    ![removeQualquer](08-listadupla-remove6.png)
+    ![removeQualquer](09-listadupla-remove6.png)
+    
+    >insereInicio(38)
+    ![insereInicio](10-listadupla-insereInicio.png)
+    ![insereInicio](11-listadupla-insereInicio.png)
+    ![insereInicio](12-listadupla-insereInicio.png)
+    ![insereInicio](13-listadupla-insereInicio.png)
+    ![insereInicio](14-listadupla-insereInicio.png)
+    
+    >insereQualquer(25, 3)
+    ![insereQualquer](15-listadupla-insere3-25.png)
+    ![insereQualquer](16-listadupla-insere3-25.png)
+    ![insereQualquer](17-listadupla-insere3-25.png)
+    ![insereQualquer](18-listadupla-insere3-25.png)
+    ![insereQualquer](19-listadupla-insere3-25.png)
+    ![insereQualquer](20-listadupla-insere3-25.png)
+    ![insereQualquer](21-listadupla-insere3-25.png)
+    ![insereQualquer](22-listadupla-insere3-25.png)
+    ![insereQualquer](23-listadupla-insere3-25.png)
+    ![insereQualquer](24-listadupla-insere3-25.png)
+    
  - Árvore Binária
    - estrutura de dados não linear, bidimensional com propriedades especiais. Utiizada para representar um conjunto de dados de maneira hierárquica   
  - Grafos
