@@ -1,47 +1,54 @@
 #### 1) Defina cada uma das estruturas de dados abaixo, descreva quais são as operações aplicáveis e simule cada uma das estruturas para um conjunto entrada com 10 elementos
 
  - Lista 
-   - lista em que a ordem é definida por seus elementos, um item da lista aponta para o próximo
-   ![lista](01-lista.png)
+   - lista em que a ordem é definida por seus elementos, um item da lista aponta para o próximo   
+   ![lista](01-lista.png)   
    >removeInicio();   
-   ![removeInicio](02-lista-removeInicio.png)
-   ![removeIniio](03-lista-removeinicioFim.png)
+   ![removeInicio](02-lista-removeInicio.png)   
+   ![removeIniio](03-lista-removeinicioFim.png)   
    ---
     >removeFim();   
-    ![removeFim](04-lista-removeFim.png)
-    ![removeFIm](05-lista-removefim.png)
-    ![removeFim](06-lista-removefimfim.png)
+    ![removeFim](04-lista-removeFim.png)   
+    ![removeFIm](05-lista-removefim.png)   
+    ![removeFim](06-lista-removefimfim.png)   
     
     >removeQualquer(3)   
-    ![removeQualquer](07-lista-remove3.png)
-    ![removeQualquer](08-lista-remove3.png)
-    ![removeQualquer](09-lista-remove3fim.png)
+    ![removeQualquer](07-lista-remove3.png)   
+    ![removeQualquer](08-lista-remove3.png)   
+    ![removeQualquer](09-lista-remove3fim.png)   
     
     >insereQualquer(4)   
-    ![insereQualquer](10-lista-add4.png)
-    ![insereQualquer](11-lista-add4.png)
-    ![insereQualquer](12-lista-add4.png)
-    ![insereQualquer](13-lista-add4fim.png)
+    ![insereQualquer](10-lista-add4.png)   
+    ![insereQualquer](11-lista-add4.png)   
+    ![insereQualquer](12-lista-add4.png)   
+    ![insereQualquer](13-lista-add4fim.png)   
     
  - Pilha
-   - estrutura de dados que segue a ordem LIFO ultimo a entrar é o primeiro a sair
+   - estrutura de dados que segue a ordem LIFO ultimo a entrar é o primeiro a sair   
+   ![pilha](01-pilha.png)   
    >push()
-    
-    >pop()
+   ![push](02-pilha-push.png)
+   ![push](03-pilha-push.png)
+   ![push](04-pilha-push.png)
+
+   >pop()
+   ![pop](05-pilha-pop.png)
+   ![pop](06-pilha-pop.png)
+   ![pop](07-pilha-pop.png)
    
  - Fila de Prioridades
-   - estrutura de dados que segue a ordem FIFO primeiro que entra é o primeiro que sai
+   - estrutura de dados que segue a ordem FIFO primeiro que entra é o primeiro que sai   
    
    >enqueue()
     
-    >dequeue()
+   >dequeue()
    
  - Fila Circular
-   - igual a fila de prioridade porém o ultimo elemento aponta para o primeiro
+   - igual a fila de prioridade porém o ultimo elemento aponta para o primeiro   
  - Lista Duplamete Ligada
-   - Lista ligada em que além de um elemento apontar para o próximo também aponta para o anterior
+   - Lista ligada em que além de um elemento apontar para o próximo também aponta para o anterior   
  - Árvore Binária
-   - estrutura de dados não linear, bidimensional com propriedades especiais. Utiizada para representar um conjunto de dados de maneira hierárquica
+   - estrutura de dados não linear, bidimensional com propriedades especiais. Utiizada para representar um conjunto de dados de maneira hierárquica   
  - Grafos
    - Abstração que permite codificar relacionamentos entre pares de objetos emque os objetos são os vertices do grafo e seus relacionamentos são as arestas
 
