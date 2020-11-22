@@ -38,10 +38,16 @@
    
  - Fila de Prioridades
    - estrutura de dados que segue a ordem FIFO primeiro que entra é o primeiro que sai   
-   
-   >enqueue()
-    
-   >dequeue()
+   ![fila](01-fila.png)   
+   >dequeue()   
+   ![enqueue](02-fila-dequeue.png)   
+   ![enqueue](03-fila-dequeue.png)   
+   ![enqueue](04-fila-dequeue.png)   
+
+   >enqueue(57)   
+   ![enqueue](05-fila-enqueue.png)   
+   ![enqueue](06-fila-enqueue.png)   
+   ![enqueue](07-fila-enqueue.png)   
    
  - Fila Circular
    - igual a fila de prioridade porém o ultimo elemento aponta para o primeiro   
