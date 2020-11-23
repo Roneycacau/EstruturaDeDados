@@ -26,12 +26,12 @@
  - Pilha
    - estrutura de dados que segue a ordem LIFO ultimo a entrar é o primeiro a sair   
    ![pilha](01-pilha.png)   
-   >push(7)
+   >push(7)   
    ![push](02-pilha-push.png)
    ![push](03-pilha-push.png)
    ![push](04-pilha-push.png)
 
-   >pop()
+   >pop()   
    ![pop](05-pilha-pop.png)
    ![pop](06-pilha-pop.png)
    ![pop](07-pilha-pop.png)
@@ -53,16 +53,16 @@
    - igual a fila de prioridade porém o ultimo elemento aponta para o primeiro   
    ![listaCircular](01-listaCircular.png)
    
-   >dequeue()
+   >dequeue()   
    ![dequeue](02-listaCircular-dequeue.png)
    
-   >dequeue()
+   >dequeue()   
    ![dequeue](03-listaCircular-dequeue.png)
    
-   >enqueue(4)
+   >enqueue(4)   
    ![enqueue](04-listaCircular-enqueue.png)
    
-   >enqueue(42)
+   >enqueue(42)   
    ![enqueue](05-listaCircular-enqueue.png)
    
    ---
@@ -70,28 +70,28 @@
    - Lista ligada em que além de um elemento apontar para o próximo também aponta para o anterior   
    ![listaDupla](01-listadupla.png)   
    
-   >removeInicio()
+   >removeInicio()   
     ![removeInicio](02-listadupla-removeInicio.png)
     ![removeInicio](03-listadupla-removeInicio.png)
    
-   >removeFim()
+   >removeFim()   
     ![removeFim](04-listadupla-removefim.png)
     ![removeFim](05-listadupla-removefim.png)
     ![removeFim](06-listadupla-removefim.png)
 
-    >removeQualquer(6)
+    >removeQualquer(6)   
     ![removeQualquer](07-listadupla-remove6.png)
     ![removeQualquer](08-listadupla-remove6.png)
     ![removeQualquer](09-listadupla-remove6.png)
     
-    >insereInicio(38)
+    >insereInicio(38)   
     ![insereInicio](10-listadupla-insereInicio.png)
     ![insereInicio](11-listadupla-insereInicio.png)
     ![insereInicio](12-listadupla-insereInicio.png)
     ![insereInicio](13-listadupla-insereInicio.png)
     ![insereInicio](14-listadupla-insereInicio.png)
     
-    >insereQualquer(25, 3)
+    >insereQualquer(25, 3)   
     ![insereQualquer](15-listadupla-insere3-25.png)
     ![insereQualquer](16-listadupla-insere3-25.png)
     ![insereQualquer](17-listadupla-insere3-25.png)
@@ -108,20 +108,20 @@
    - estrutura de dados não linear, bidimensional com propriedades especiais. Utiizada para representar um conjunto de dados de maneira hierárquica
    ![arvore](01-arvore.png)
    
-   remove(52)
+   remove(52)   
    ![remove](02-arvore-remove52.png)
    ![remove](03-arvore-remove52.png)
    
-   remove(82)
+   remove(82)   
    ![remove](04-arvore-remove82.png)
    ![remove](05-arvore-remove82.png)
    ![remove](06-arvore-remove82.png)
    ![remove](07-arvore-remove82.png)
    
-   add(1)
+   add(1)   
    ![add](08-arvore-insert1.png)
    
-   add(88)
+   add(88)   
    ![add](09-arvore-insert88.png)
    ---   
  - Grafos
