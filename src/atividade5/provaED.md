@@ -106,12 +106,159 @@
     ---
  - Árvore Binária
    - estrutura de dados não linear, bidimensional com propriedades especiais. Utiizada para representar um conjunto de dados de maneira hierárquica
-   add()
+   ![arvore](01-arvore.png)
    
-   remove()
+   remove(52)
+   ![remove](02-arvore-remove52.png)
+   ![remove](03-arvore-remove52.png)
+   
+   remove(82)
+   ![remove](04-arvore-remove82.png)
+   ![remove](05-arvore-remove82.png)
+   ![remove](06-arvore-remove82.png)
+   ![remove](07-arvore-remove82.png)
+   
+   add(1)
+   ![add](08-arvore-insert1.png)
+   
+   add(88)
+   ![add](09-arvore-insert88.png)
    ---   
  - Grafos
    - Abstração que permite codificar relacionamentos entre pares de objetos emque os objetos são os vertices do grafo e seus relacionamentos são as arestas
+
+#### 2)  Dada a estrutura abaixo da classe NO, realize a implementação de um método recursivo que adicione um Curso no final da Lista Duplamente Encadeada e um método **recursivo** que remova e retorne um Curso do final da Lista Duplamente Encadeada. Os métodos não devem ter nenhuma iteração, somente chamadas recursivas. A classe Curso possuí os atributos id, nome, semestre e duração
+ ```Java
+public class NO{
+    public Curso dados;
+    public NO prox;
+    public NO anterior;
+
+    public NO (Curso curso) {
+        dados = curso;
+        prox = null;
+        anterior = null;   
+    }
+}
+```
+
+```Java
+package atividade5.exercicio2;
+
+public class Curso {
+    private int id;
+    private String nome;
+    private int semestre;
+    private int duracao;
+
+    public Curso() {
+    }   
+
+    public Curso(int id, String nome, int semestre, int duracao){
+        this.id = id;
+        this.nome =nome;
+        this.semestre = semestre;
+        this.duracao = duracao ;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getSemestres() {
+        return semestres;
+    }
+
+    public void setSemestres(int semestres) {
+        this.semestres = semestres;
+    }
+
+    public int getDuracao() {
+        return duracao;
+    }
+
+    public void setDuracao(int duracao) {
+        this.duracao = duracao;
+    }
+}
+
+package atividade5.exercicio2;
+
+public class ListaDinamicaDuplaRecursiva {
+
+    private NO inicio;
+    private int tamanho;
+    private NO fim;
+
+    public int getTamanho() {
+        return tamanho;
+    }
+
+    public ListaDinamicaDuplaRecursiva() {
+        this.inicio = null;
+        this.tamanho = 0;
+    }
+
+    public boolean listaVazia() {
+        return tamanho == 0;
+    }
+
+    private NO buscarUltimo(NO aux) {
+        if (aux.getProximo() != null) {
+            return buscarUltimo(aux.getProximo());
+        }
+        return aux;
+    }
+
+    public NO inserirFinal(Curso curso) {
+        NO novo = new NO(curso);
+        fim = novo;
+        
+        NO aux = buscarUltimo(inicio);
+        fim.setAnterior(aux);
+        aux.setProximo(fim);
+        tamanho++;
+        return fim;
+    }
+
+    public NO removerFinal() {
+
+        if (listaVazia()) {
+            throw new IllegalArgumentException("Lista Vazia");
+        }
+
+        NO aux = buscarUltimo(inicio);
+        fim = aux;
+        aux.getAnterior().setProximo(null);
+        tamanho--;
+        return fim;
+    }
+
+}
+``` 
+
+
+#### 3) Considerando o algoritmo Quick Sort simule a sua execução para o seguinte domínio de entrada:
+ > [11, 12, 8, 9, 14, 17, 22, 75, 44, 98, 120, 200, 138, 139, 22, 33, 85, 92, 35]
+ #### escolhendo como pivô o elemento central
+![quicksort](quicksort.png)
+
+
+#### 4) Dado o algoritmo Merge Sort simule a sua execução para o seguinte domínio de entrada: 
+> [13, 11, 7, 8, 9, 130, 129, 128, 35, 33, 200, 99, 98, 82, 83, 81, 230, 228]
+![mergesort](mergesort.png)
 
 #### 5) Explique o funcionamento dos algoritmos de ordenação Quick Sort, Merge Sort e Heap Sort, detalhe as principais diferenças entre os três algoritmos de ordenação. Explique o funcionamento dos métodos abaixo e qual algoritmo de ordenação eles pertencem
 
